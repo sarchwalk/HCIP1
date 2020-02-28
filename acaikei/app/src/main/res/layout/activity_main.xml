@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="100"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/table"
+                tools:ignore="ContentDescription"/>
+                <!--
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_complexslices"
+                tools:srcCompat="@drawable/ic_complexslices"
+                -->
+
+            <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+                android:id="@+id/frm_mask_5"
+                android:layout_width="412dp"
+                android:layout_height="412dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                app:mask="@drawable/mask_inner"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/content5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/base"
+                    tools:ignore="ContentDescription" />
+
+            </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+
+            <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+                android:id="@+id/frm_mask_4"
+                android:layout_width="412dp"
+                android:layout_height="412dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                app:mask="@drawable/mask_circumference"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/content4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bowl"
+                    tools:ignore="ContentDescription" />
+
+            </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+            <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+                android:id="@+id/frm_mask_1"
+                android:layout_width="411dp"
+                android:layout_height="411dp"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                app:mask="@drawable/mask_left"
+                app:porterduffxfermode="DST_IN">
+
+                <ImageView
+                    android:id="@+id/content1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bowl"
+                    tools:ignore="ContentDescription" />
+            </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+            <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+                android:id="@+id/frm_mask_2"
+                android:layout_width="411dp"
+                android:layout_height="411dp"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                app:mask="@drawable/mask_centre"
+                app:porterduffxfermode="DST_IN">
+
+
+                <ImageView
+                    android:id="@+id/content2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bowl"
+                    tools:ignore="ContentDescription" />
+
+            </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+            <com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout
+                android:id="@+id/frm_mask_3"
+                android:layout_width="411dp"
+                android:layout_height="411dp"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                app:mask="@drawable/mask_right"
+                app:porterduffxfermode="DST_IN">
+
+
+                <ImageView
+                    android:id="@+id/content3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/bowl"
+                    tools:ignore="ContentDescription" />
+
+            </com.christophesmet.android.views.maskableframelayout.MaskableFrameLayout>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fabMargin"
+                android:layout_marginTop="@dimen/fabMargin"
+                android:layout_marginEnd="@dimen/fabMargin"
+                android:layout_marginBottom="@dimen/fabMargin"
+                android:src="@drawable/spoon"
+                android:tint="@color/White"
+                app:backgroundTint="@color/colorCheck"
+                android:translationX="330dp"
+                android:translationY="520dp"
+                app:fabSize="auto" />
+
+            <ImageView
+                android:id="@+id/imageMask"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_complexslices_mask"
+                tools:srcCompat="@drawable/ic_complexslices_mask" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/fruitPalette"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="10"
+            android:background="#808080"
+            android:backgroundTint="@color/colorAccent"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageMask">
+
+            <ImageView
+                android:id="@+id/fruit0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/dragonfruit_icon"
+                android:visibility="visible"
+                tools:src="@drawable/dragonfruit_icon" />
+
+            <ImageView
+                android:id="@+id/fruit1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_colorblob3"
+                android:visibility="visible"
+                tools:src="@drawable/ic_colorblob3" />
+
+            <ImageView
+                android:id="@+id/fruit2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_colorblob"
+                android:visibility="visible"
+                tools:src="@drawable/ic_colorblob" />
+
+            <ImageView
+                android:id="@+id/fruit3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/appleicon"
+                android:visibility="visible"
+                tools:src="@drawable/appleicon" />
+
+            <ImageView
+                android:id="@+id/fruit4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_colorblob2"
+                android:visibility="visible"
+                tools:src="@drawable/ic_colorblob2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<TextClock-->
+        <!--android:id="@+id/digitalClock"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="false"-->
+        <!--android:layout_marginTop="50dip"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:format12Hour="h:mm"-->
+        <!--android:format24Hour="hh:mm"-->
+        <!--android:gravity="center"-->
+        <!--android:shadowColor="@color/Black"-->
+        <!--android:shadowDx="2"-->
+        <!--android:shadowDy="2"-->
+        <!--android:shadowRadius="20"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:textSize="50sp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/dateView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/digitalClock"-->
+        <!--android:fontFamily="sans-serif"-->
+        <!--android:gravity="center"-->
+        <!--android:shadowColor="@color/Black"-->
+        <!--android:shadowDx="2"-->
+        <!--android:shadowDy="2"-->
+        <!--android:shadowRadius="20"-->
+        <!--android:textAlignment="center"-->
+        <!--android:textColor="@color/White"-->
+        <!--android:textSize="30sp"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"/>-->
+
+</RelativeLayout>
