@@ -4,6 +4,6 @@ Design, implement, document, and demonstrate two alternative ways to unlock a m
 
 AcaiKey gesture unlock and Shoehorn magnetometer sensor unlock
 
-Download .zip files and open in Android Studio to build and run
+Download files and open in Android Studio to build and run
 
 Portfolio at https://erikaef978.wixsite.com/hci2/project-1
